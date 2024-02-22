@@ -171,7 +171,7 @@ function eliminarItemCarrito(event) {
   //Actualizamos el total del carrito
   actualizarTotalCarrito();
 
-  //la siguiente funciòn controla si hay elementos en el carrito
+  //La siguiente función controla si hay elementos en el carrito
   //Si no hay elimino el carrito
   ocultarCarrito();
 }
