@@ -84,7 +84,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc) {
   item.classList.add = "item";
   var itemsCarrito = document.getElementsByClassName("carrito-items")[0];
 
-  //controlamos que el item que intenta ingresar no se encuentre en el carrito
+  //Controlamos que el item que intenta ingresar no se encuentre en el carrito
   var nombresItemsCarrito = itemsCarrito.getElementsByClassName(
     "carrito-item-titulo"
   );
@@ -120,7 +120,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc) {
     .getElementsByClassName("btn-eliminar")[0]
     .addEventListener("click", eliminarItemCarrito);
 
-  //Agregmos al funcionalidad restar cantidad del nuevo item
+  //Agregamos la funcionalidad restar cantidad del nuevo item
   var botonRestarCantidad = item.getElementsByClassName("restar-cantidad")[0];
   botonRestarCantidad.addEventListener("click", restarCantidad);
 
