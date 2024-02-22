@@ -15,14 +15,14 @@ function ready() {
     button.addEventListener("click", eliminarItemCarrito);
   }
 
-  //Agrego funcionalidad al boton sumar cantidad
+  //Agrego funcionalidad al botón sumar cantidad
   var botonesSumarCantidad = document.getElementsByClassName("sumar-cantidad");
   for (var i = 0; i < botonesSumarCantidad.length; i++) {
     var button = botonesSumarCantidad[i];
     button.addEventListener("click", sumarCantidad);
   }
 
-  //Agrego funcionalidad al buton restar cantidad
+  //Agrego funcionalidad al butón restar cantidad
   var botonesRestarCantidad =
     document.getElementsByClassName("restar-cantidad");
   for (var i = 0; i < botonesRestarCantidad.length; i++) {
