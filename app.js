@@ -67,7 +67,7 @@ function agregarAlCarritoClicked(event) {
   hacerVisibleCarrito();
 }
 
-//Funcion que hace visible el carrito
+//Función que hace visible el carrito
 function hacerVisibleCarrito() {
   carritoVisible = true;
   var carrito = document.getElementsByClassName("carrito")[0];
@@ -78,7 +78,7 @@ function hacerVisibleCarrito() {
   items.style.width = "60%";
 }
 
-//Funciòn que agrega un item al carrito
+//Función que agrega un item al carrito
 function agregarItemAlCarrito(titulo, precio, imagenSrc) {
   var item = document.createElement("div");
   item.classList.add = "item";
