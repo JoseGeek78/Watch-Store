@@ -30,7 +30,7 @@ function ready() {
     button.addEventListener("click", restarCantidad);
   }
 
-  //Agregamos funcionalidad al boton Agregar al carrito
+  //Agregamos funcionalidad al botón Agregar al carrito
   var botonesAgregarAlCarrito = document.getElementsByClassName("boton-item");
   for (var i = 0; i < botonesAgregarAlCarrito.length; i++) {
     var button = botonesAgregarAlCarrito[i];
@@ -53,7 +53,7 @@ function pagarClicked() {
   actualizarTotalCarrito();
   ocultarCarrito();
 }
-//Funciòn que controla el boton clickeado de agregar al carrito
+//Función que controla el botón click de agregar al carrito
 function agregarAlCarritoClicked(event) {
   var button = event.target;
   var item = button.parentElement;
