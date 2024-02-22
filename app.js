@@ -175,7 +175,7 @@ function eliminarItemCarrito(event) {
   //Si no hay elimino el carrito
   ocultarCarrito();
 }
-//Funciòn que controla si hay elementos en el carrito. Si no hay oculto el carrito.
+//Función que controla si hay elementos en el carrito. Si no hay oculto el carrito.
 function ocultarCarrito() {
   var carritoItems = document.getElementsByClassName("carrito-items")[0];
   if (carritoItems.childElementCount == 0) {
@@ -190,15 +190,15 @@ function ocultarCarrito() {
 }
 //Actualizamos el total de Carrito
 function actualizarTotalCarrito() {
-  //seleccionamos el contenedor carrito
+  //Seleccionamos el contenedor carrito
   var carritoContenedor = document.getElementsByClassName("carrito")[0];
   var carritoItems = carritoContenedor.getElementsByClassName("carrito-item");
   var total = 0;
-  //recorremos cada elemento del carrito para actualizar el total
+  //Recorremos cada elemento del carrito para actualizar el total
   for (var i = 0; i < carritoItems.length; i++) {
     var item = carritoItems[i];
     var precioElemento = item.getElementsByClassName("carrito-item-precio")[0];
-    //quitamos el simobolo peso y el punto de milesimos.
+    //Quitamos el simobolo peso y el punto de milesimos.
     var precio = parseFloat(
       precioElemento.innerText.replace("$", "").replace(".", "")
     );
