@@ -175,7 +175,7 @@ function eliminarItemCarrito(event) {
   //Si no hay elimino el carrito
   ocultarCarrito();
 }
-//Función que controla si hay elementos en el carrito. Si no hay oculto el carrito.
+//Función que controla si hay elementos en el carrito
 function ocultarCarrito() {
   var carritoItems = document.getElementsByClassName("carrito-items")[0];
   if (carritoItems.childElementCount == 0) {
