@@ -198,7 +198,7 @@ function actualizarTotalCarrito() {
   for (var i = 0; i < carritoItems.length; i++) {
     var item = carritoItems[i];
     var precioElemento = item.getElementsByClassName("carrito-item-precio")[0];
-    //Quitamos el simobolo peso y el punto de milesimos.
+    //Quitamos el simobolo peso y el punto de milésimos.
     var precio = parseFloat(
       precioElemento.innerText.replace("$", "").replace(".", "")
     );
